@@ -1,0 +1,113 @@
+ [{
+    "ID": 1,
+    "id": "sp1",
+    "title": "cake item",
+    "card": "img/cake-1.jpeg",
+    "price": 5,
+    "discount": 0.19,
+    "amount": 5,
+    "date": "2000-03-16",
+    "selling": "hot"
+  }, {
+    "Id": 2,
+    "id": "sp2",
+    "title": "cupcake item",
+    "card": "img/cupcake-1.jpeg",
+    "price": 10,
+    "discount": 0.19,
+    "amount": 4,
+    "date": "2000-03-18",
+    "selling": "hot"
+  }, {
+    "Id": 3,
+    "id": "sp3",
+    "title": "doughnut item",
+    "card": "img/doughnut-1.jpeg",
+    "price": 15,
+    "discount": 0.19,
+    "amount": 3,
+    "date": "2000-03-19",
+    "selling": "hot"
+  }, {
+    "ID": 2,
+    "id": "sp4",
+    "title": "cupcake item",
+    "card": "img/cupcake-3.jpeg",
+    "price": 10,
+    "discount": 0.19,
+    "amount": 2,
+    "date": "2000-03-21"
+}, {
+    "ID": 1,
+    "id": "sp5",
+    "title": "cake item",
+    "card": "img/cake-2.jpeg",
+    "price": 10,
+    "discount": 0.19,
+    "amount": 3,
+    "date": "2000-03-23"
+  }, {
+   "ID": 2,
+    "id": "sp6",
+    "title": "cupcake item",
+    "card": "img/cupcake-2.jpeg",
+    "price": 5,
+    "discount": 0.19,
+    "amount": 1,
+    "date": "2000-03-24"
+  }, {
+   "ID": 4,
+    "id": "sp7",
+    "title": "doughnut item",
+    "card": "img/doughnut-3.jpeg",
+    "price": 15,
+    "discount": 0.19,
+    "amount": 3,
+    "date": "2000-03-16"
+  }, {
+    "ID": 5,
+    "id": "sp8",
+    "title": "sweet item",
+    "card": "img/sweets-2.jpeg",
+    "price": 5,
+    "discount": 0.19,
+    "amount": 0,
+    "date": "2000-03-17"
+  }, {
+    "ID" :1,
+    "id": "sp9",
+    "title": "cake item",
+    "card": "img/cake-3.jpeg",
+    "price": 6,
+    "discount": 0.19,
+    "amount": 3,
+    "date": "2000-03-15"
+  }, {
+    "ID": 2,
+    "id": "sp10",
+    "title": "cupcake item",
+    "card": "img/cupcake-3.jpeg",
+    "price": 10,
+    "discount": 0.19,
+    "amount": 9,
+    "date": "2000-03-14"
+  }, {
+    "ID": 4,
+    "id": "sp11",
+    "title": "doughnut item",
+    "card": "img/doughnut-2.jpeg",
+    "price": 15,
+    "discount": 0.19,
+    "amount": 3,
+    "date": "2000-03-13"
+
+ }, {
+    "ID": 5,
+    "id": "sp12",
+    "title": "sweet item",
+    "card": "img/sweets-3.jpeg",
+    "price": 10,
+    "discount": 0.19,
+    "amount": 20,
+    "date": "2000-03-12"
+  }]

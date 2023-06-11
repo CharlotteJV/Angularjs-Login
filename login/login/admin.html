@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="./js/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+
+        }
+
+        .pexel-img>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex {
+            flex: auto;
+        }
+
+        .form-sign {
+            flex-direction: row-reverse;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
+
+        body {
+            font-family: 'Shantell Sans', cursive;
+        }
+    </style>
+</head>
+
+<body ng-controller="adminCtrl">
+    <nav class="navbar navbar-expand-sm navbar-dark text-primary" style="background-color: #fff;">
+        <a class="navbar-brand" href="#"><i class="fa fa-user text-dark" aria-hidden="true">
+                <span class="pl-3">thaoanh@gmail.com</span>
+            </i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon">
+                <i class="fa fa-bars text-dark" aria-hidden="true"></i>
+            </span></button>
+        <div class="collapse navbar-collapse d-flex form-sign" id="collapsibleNavId">
+            <form class="form-inline my-2 my-lg-0 ">
+                <div class="form-group">
+                    <label for=""></label>
+                    <a href="./login.html" class="text-capitalize"> đăng xuất</a>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <section class="table container-fluid px-0" ng-repeat="a in admin track by $index">
+        <div class="row">
+            <div class="col-lg-6">
+                <span class="pexel-img"> <img src="../img/pexels-ian-beckley-2440079.jpg" alt="" srcset=""></span>
+
+            </div>
+
+            <div class="col-lg-6 text-capitalize">
+                <p class="text-center display-4 ">sơ yếu lí lịch</p>
+                <div class="header-text">
+                    <p>họ và tên: {{a.name}} </p>
+                    <span class="d-flex">
+                        <p>trình độ học vấn: {{a.trinhdohocvan}} </p>
+                        <p class="mx-auto">quê quán: {{a.quequan}} </p>
+                    </span>
+                    <p>nơi sinh: {{a.noisinh}}</p>
+                    <p>nghề nghiệp: {{a.nghenghiep}} </p>
+                    <p>Email: {{a.email}} </p>
+                    <p>số điện thoại: {{a.sodienthoai}} </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
+
+        body {
+            font-family: 'Shantell Sans', cursive;
+        }
+    </style>
+</head>
+
+<body ng-controller="loginCtrl">
+
+    <section class="login-form mx-auto">
+        <form action="">
+            <div class="form-group text-white mx-5 mt-3">
+                <div class="form-heading text-center text-capitalize display-3">login</div>
+                <label for="" class="d-inline">usename: </label>
+                <input type="text" class="form-control mb-2" name="" id="username" aria-describedby="helpId"
+                    placeholder="username" ng-model="username" ng-change="validateInput()">
+
+                <label for="" class="d-inline">password: </label>
+                <input type="password" class="form-control" name="" id="password" placeholder="password"
+                    ng-model="password" ng-change="validateInput()">
+                <div class="footer-btn mt-3 d-flex justify-content-around">
+                    <button class="btn btn-success"  ng-click="login()">Signin</button>
+                    <button type="reset" class="btn btn-secondary">cancel</button>
+
+
+                </div>
+                <div ng-show="errorMessage">{{ errorMessage }}</div>
+            </div>
+        </form>
+    </section>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("loginCtrl", function ($scope, $http) {
+            $scope.user = [];
+            $http.get('dulieu.json').then(function (response) {
+                $scope.user = response.data;
+            });
+            var Avaliato = false;
+            $scope.login = function () {
+                for (i = 0; i < $scope.user.length; i++) {
+                    if ($scope.username == $scope.user[i].Username && $scope.password == $scope.user[i].Password) {
+                        Avaliato = true;
+                        break;
+                    }
+                }
+                if (Avaliato) {
+                    alert('dang nhap thanh cong');
+                    window.location.href = "adminn.html";   // điều hướng đến trang admin.html
+                } else {
+                    $scope.errorMessage = 'Invalid username or password';
+                }
+            };
+            // $scope.validateInput = function () {
+            //     // Kiểm tra xem người dùng đã nhập đủ thông tin hay chưa
+            //     if ($scope.username && $scope.password) {
+            //         $scope.validInput = true;
+            //     } else {
+            //         $scope.validInput = false;
+            //     }
+            // };
+            // $scope.changE = false;
+            // $scope.changeInput = function () {
+            //     $scope.changE != $scope.changE;
+            // }
+        });
+    </script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/js/all.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

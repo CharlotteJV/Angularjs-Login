@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "1",
+        "Username": "admin",
+        "Password": "admin",
+        "Fullname": "trần minh duy",
+        "Image": "hinh1.jpg",
+        "Money": 20000
+    },
+    {
+        "ID": "2",
+        "Username": "admin1",
+        "Password": "admin1",
+        "Fullname": "hoàng nhung",
+        "Image": "hinh2.jpg",
+        "Money": 1200
+    },
+    {
+        "ID": "3",
+        "Username": "admin2",
+        "Password": "admin2",
+        "Fullname": "nhung hoàng",
+        "Image": "hinh3.jpg",
+        "Money": 5000
+    }
+]
